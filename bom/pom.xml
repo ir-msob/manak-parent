@@ -1,28 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd"
+         xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <modelVersion>4.0.0</modelVersion>
-  <parent>
-    <groupId>ir.msob.manak.parent</groupId>
-    <artifactId>manak-parent</artifactId>
-    <version>${manak-parent.version}</version>
-    <relativePath>../pom.xml</relativePath>
-  </parent>
-  <artifactId>manak-bom</artifactId>
-  <packaging>pom</packaging>
-  <name>manak-bom</name>
-  <description>This is the Bill of Materials (BOM) for the Manak. It manages the dependencies used across the
-    different modules of the project.</description>
-  <dependencyManagement>
-    <dependencies>
-      <!-- Jima BOM -->
-      <dependency>
-        <groupId>ir.msob.jima.bom</groupId>
-        <artifactId>jima-bom</artifactId>
-        <version>${jima.version}</version>
-        <type>pom</type>
-        <scope>import</scope>
-      </dependency>
-    </dependencies>
-  </dependencyManagement>
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>ir.msob.manak.parent</groupId>
+        <artifactId>manak-parent</artifactId>
+        <version>${manak-parent.version}</version>
+        <relativePath>../pom.xml</relativePath>
+    </parent>
+    <artifactId>manak-bom</artifactId>
+    <packaging>pom</packaging>
+    <name>manak-bom</name>
+    <description>This is the Bill of Materials (BOM) for the Manak. It manages the dependencies used across the
+        different modules of the project.
+    </description>
+    <dependencyManagement>
+        <dependencies>
+            <!-- Jima BOM -->
+            <dependency>
+                <groupId>ir.msob.jima.bom</groupId>
+                <artifactId>jima-bom</artifactId>
+                <version>${jima.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
 </project>
