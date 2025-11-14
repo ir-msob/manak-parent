@@ -48,7 +48,7 @@
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
         <!-- Lombok for Java -->
-        <projectlombok.version>1.18.34</projectlombok.version>
+        <projectlombok.version>1.18.42</projectlombok.version>
         <lombok-maven-plugin.version>1.18.20.0</lombok-maven-plugin.version>
 
         <!-- Other Libraries -->
